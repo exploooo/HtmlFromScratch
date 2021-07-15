@@ -1,0 +1,185 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+p, h6{
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    background-color: rgb(255,64,141);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.box1{
+    z-index: 1;
+}
+
+.box2{
+    z-index: 2;
+    position: relative;
+    top: -15px; 
+    left: -87px;
+}
+
+.box{
+    width: 350px;
+    height: 500px;
+    background-color: rgb(231,238,235);
+    display: flex;
+    flex-direction: column;
+
+    transform: rotate3d(1,0.8,1,-65deg);
+    -webkit-box-shadow: -46px 16px 3px 7px rgba(0,0,0,0.48); 
+    box-shadow: -60px 16px 3px 7px rgba(0,0,0,0.45);
+}
+
+.box-main{
+    width: 100%;
+    height: 97%;
+    display: flex;
+    flex-direction: column;
+    padding: .250rem;
+}
+
+.box-header{
+    padding: .250rem;
+    width: 100%;
+    height: 20%;
+    background-color: rgb(117,32,89);
+    display: flex;
+    flex-direction: row;
+}
+
+.box-header-left{
+    color: rgb(244,203,111);
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+
+.box-header-left p{
+    font-size: 50%;
+    width: 50%;
+}
+
+.box-header-left h6{
+    font-size: 50%;
+}
+
+.text-box{
+    margin-left: 5px;
+}
+
+.box-header-box{
+    width: 25px;
+    height: 25px;
+    background-color: rgb(244,203,111);
+}
+
+.box-header-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.Id-box{
+    color: rgb(192,53,122);
+    border: solid currentColor .250rem;
+    font-size: 40px;
+    padding: .5rem 1.7rem;
+}
+
+.box-body{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    
+}
+
+.box-body-left, .box-body-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.box-body-left{
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.box-body-right{
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.blue-sticky-note, .yellow-sticky-note{
+    width: 140px;
+    height: 120px;
+    font-size: 8px;
+    padding: .125rem;
+}
+
+.blue-sticky-note{
+    background-color: rgb(123, 229, 212);
+    color:white
+}
+
+.yellow-sticky-note{
+    background-color: rgb(244, 198, 110);
+}
+
+.box-form{
+    width: 100%;
+    height: 40%;
+    padding-inline: .6rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.box-form-left, .box-form-right{
+    width: 50%;
+    display: flex;
+}
+
+form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form p{
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+form input+p{
+    margin-top: 5px;
+}
+
+input{
+    width: 90%;
+    border:none;
+    padding:.250rem;
+}
+
+input:focus-visible{
+    outline: none;
+    background-color: rgb(127,195,207);
+}
+
+.box-footer{
+    width: 100%;
+    height: 3%;
+    background-color: rgb(238,195,104);
+}
